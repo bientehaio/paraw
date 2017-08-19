@@ -9,12 +9,17 @@ try {
     .command('start [package]', 'generate systemd service file', (yargs) => {
       return yargs
         .option('confirm', {
-          default: false
+          default : false,
+          describe: 'confirm package.json data'
         })
         .option('systemd-dir', {
-          default: '/etc/systemd/system'
+          default : '/etc/systemd/system',
+          describe: 'systemd directory'
         })
-        .option('service-file', {})
+        .option('service-file', {
+          type    : 'string',
+          describe: 'service file name'
+        })
     }, async (argv) => {
       const packageFile      = path.resolve(argv.package || 'package.json')
       const workingDirectory = path.dirname(packageFile) === '.' ? __dirname : path.dirname(packageFile)
