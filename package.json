@@ -1,0 +1,14 @@
+{
+  "name": "paraw",
+  "version": "0.0.1",
+  "description": "Systemd service file generator for Node.js apps",
+  "main": "index.js",
+  "repository": "https://github.com/bientehaio/paraw.git",
+  "author": "hamed torbatian <hamed.tm@gmail.com>, ahmad jahangir <ahmad.jahangir1986@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "inquirer": "^3.2.2",
+    "yargs": "^8.0.2"
+  }
+}
