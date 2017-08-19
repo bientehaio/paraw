@@ -7,7 +7,7 @@
   "author": "hamed torbatian <hamed.tm@gmail.com>, ahmad jahangir <ahmad.jahangir1986@gmail.com>",
   "license": "MIT",
   "bin": {
-    "paraw":"./index.js"
+    "paraw": "./index.js"
   },
   "dependencies": {
     "chalk": "^2.1.0",
